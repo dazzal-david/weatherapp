@@ -1,0 +1,110 @@
+/* General Styles */
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    background: #f0f8ff; /* Light background color for a clean look */
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+}
+
+/* Heading Styles */
+.heading {
+    background: #87cefa; /* Light sky blue background */
+    text-align: center;
+    margin-bottom: 20px;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+}
+
+.heading h1 {
+    margin: 0;
+    font-size: 2.5rem;
+    color: #fff; /* White text color */
+}
+
+.heading p {
+    margin: 5px 0 0;
+    font-size: 1.2rem;
+    color: #fff; /* White text color */
+}
+
+/* Input and Button Styles */
+.inputs {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+#cityInput {
+    padding: 10px;
+    font-size: 1rem;
+    border: 2px solid #87cefa; /* Border color matching the heading */
+    border-radius: 5px;
+    margin-bottom: 10px;
+    width: 300px;
+    outline: none;
+    box-sizing: border-box; /* Include padding in width calculation */
+}
+
+#searchBtn {
+    padding: 10px 20px;
+    font-size: 1rem;
+    color: #fff; /* White text color */
+    background-color: #4682b4; /* Steel blue background */
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+#searchBtn:hover {
+    background-color: #4169e1; /* Royal blue background on hover */
+}
+
+/* Card Styles */
+.card {
+    background: linear-gradient(hsl(39, 100%, 81%),rgb(207, 207, 245)); /* White background for card */
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+    text-align: center;
+    width: 300px;
+}
+
+.card h1 {
+    margin: 0;
+    font-size: 2rem;
+    color: #333; /* Dark text color */
+}
+
+
+p.city {
+    font-size: 1.3rem;
+    margin: 8px;
+    color: #333;
+}
+
+
+p.temp {
+    font-size: 3rem;
+    font-weight: bold;
+    margin: 20px;
+}
+
+p.emoji {
+    font-size: 5rem !important;
+}
+
+.card p:last-of-type {
+    font-size: 2rem;
+    margin-top: 10px;
+}
+
