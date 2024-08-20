@@ -100,11 +100,8 @@ p.temp {
 }
 
 p.emoji {
-    font-size: 5rem !important;
+    font-size: 5rem;
+    margin: 20px 0 0 0;
 }
 
-.card p:last-of-type {
-    font-size: 2rem;
-    margin-top: 10px;
-}
 
