@@ -5,6 +5,17 @@ const card = document.querySelector('.card');
 const apiKey = 'ff04ff0412a2e164297cf91781b4c31f';
 
 searchBtn.addEventListener('click', async () => {
+    await handleSearch();
+});
+
+// Event listener for Enter key press
+cityInput.addEventListener('keypress', async (event) => {
+    if (event.key === 'Enter') {
+        await handleSearch();
+    }
+});
+
+async function handleSearch() {
 
     const cityName = cityInput.value;
 
@@ -23,7 +34,7 @@ searchBtn.addEventListener('click', async () => {
         displayNoCityError();
         clearWeatherData();
     }
-});
+}
 
 window.addEventListener('load', () => {
     const savedCityName = localStorage.getItem('savedCityName');
